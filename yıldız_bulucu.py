@@ -100,7 +100,7 @@ while True:
     
     if alt >= 0:
         arduino.write(f"{az},{alt}\n".encode('utf-8'))
-        print(f"\033[92m Azimut: {az:4f} İrtifa: {alt:4f} \033[0m\r", end="")
+        print(f"\033[92m Azimut: {az:4f} Yükseklik: {alt:4f} \033[0m\r", end="")
     else:
         print("\033[91mYıldız ufkun altında.\033[0m\r", end="")
 
